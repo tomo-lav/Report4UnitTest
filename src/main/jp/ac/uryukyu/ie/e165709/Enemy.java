@@ -6,12 +6,6 @@ public class Enemy {
     int attack;
     boolean dead;
 
-    /**
-     * コンストラクタ。名前、最大HP、攻撃力を指定する。
-     * @param name モンスター名
-     * @param maximumHP モンスターのHP
-     * @param attack モンスターの攻撃力
-     */
     public Enemy (String name, int maximumHP, int attack) {
         this.name = name;
         hitPoint = maximumHP;

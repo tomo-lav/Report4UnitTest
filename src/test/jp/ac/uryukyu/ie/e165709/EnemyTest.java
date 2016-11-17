@@ -8,7 +8,7 @@ public class EnemyTest {
     @Test
     public void attack() throws Exception {
         int heroHP = 10;
-        Hero hero = new Hero("テスト勇者", heroHP, 5);
+        Hero hero = new Hero("テスト勇者a", heroHP, 5);
         Enemy enemy = new Enemy("テストスライム", 6, 3);
         enemy.dead = true;
         for(int i=0; i<10; i++) {
