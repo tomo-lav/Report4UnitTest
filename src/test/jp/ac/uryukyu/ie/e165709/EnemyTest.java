@@ -10,11 +10,15 @@ public class EnemyTest {
         int heroHP = 10;
         Hero hero = new Hero("テスト勇者aa", heroHP, 5);
         Enemy enemy = new Enemy("テストスライム", 6, 3);
-        enemy.dead = true;
+        enemy.setDead(true);
         for(int i=0; i<10; i++) {
-            enemy.attack(hero); 
+            enemy.attack(hero);
         }
-        assertEquals(heroHP, hero.hitPoint);
+        assertEquals(heroHP, hero.getHitPoint());
+
+
     }
+
+
 
 }
